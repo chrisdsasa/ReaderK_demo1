@@ -1,0 +1,64 @@
+.reading-assistant-overlay {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 320px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2147483647;
+  opacity: 1;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  transform: translateX(calc(100% + 20px));
+}
+
+/* Add dark mode support */
+@media (prefers-color-scheme: dark) {
+  .reading-assistant-overlay {
+    background: #1F2937;
+    color: #F9FAFB;
+  }
+}
+
+.highlighted-text {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.reading-assistant-overlay.visible {
+  transform: translateX(0);
+}
+
+.overlay-header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.overlay-content {
+  padding: 16px;
+}
+
+.overlay-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.overlay-button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #4F46E5;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.overlay-button:hover {
+  background: #4338CA;
+} 

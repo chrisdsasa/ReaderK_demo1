@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Reading Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Smart Reading Assistant</h1>
+        
+        <!-- OpenAI Settings -->
+        <div class="settings-section">
+            <h2>OpenAI Settings</h2>
+            <div class="form-group">
+                <label for="apiKey">API Key:</label>
+                <input type="password" id="apiKey" placeholder="Enter your OpenAI API key">
+            </div>
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <select id="model">
+                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                    <option value="gpt-4">GPT-4</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Reading Settings -->
+        <div class="settings-section">
+            <h2>Reading Settings</h2>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="enableHighlight">
+                    Enable Highlighting
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="highlightColor">Highlight Color:</label>
+                <input type="color" id="highlightColor" value="#FFEB3B">
+            </div>
+            <div class="form-group">
+                <label for="highlightOpacity">Highlight Opacity:</label>
+                <input type="range" id="highlightOpacity" min="0" max="100" value="20">
+            </div>
+            <div class="form-group">
+                <label for="targetLanguage">Translation Language:</label>
+                <select id="targetLanguage">
+                    <option value="zh">Chinese</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="ja">Japanese</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Voice Settings</h2>
+            <div class="form-group">
+                <label for="voice">Voice:</label>
+                <select id="voice"></select>
+            </div>
+            <div class="form-group">
+                <label for="rate">Speech Rate:</label>
+                <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+            </div>
+        </div>
+
+        <button id="saveSettings" class="save-button">Save Settings</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
