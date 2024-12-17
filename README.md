@@ -130,6 +130,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [Jiace Zhao(krypoto)]([https://twitter.com/yourtwitter](https://x.com/KrypotoZ))
 
-Project Link: [https://github.com/yourusername/smart-reading-assistant](https://github.com/yourusername/smart-reading-assistant)
+Project Link: [https://github.com/yourusername/smart-reading-assistant](https://github.com/chrisdsasa/smart-reading-assistant)
 
 My studio site: https://studio.krypoto.top/
